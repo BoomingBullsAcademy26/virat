@@ -6,133 +6,168 @@
 <title>VIRAT CRICKET TIPS</title>
 
 <style>
+:root{
+    --tg-blue:#229ED9;
+    --accent:#00ff99;
+    --dark:#060f0b;
+    --glass:rgba(255,255,255,0.08);
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Poppins", system-ui, -apple-system, sans-serif;
 }
 
 body{
-    background: linear-gradient(180deg,#081a12,#020d08);
-    color:#fff;
+    background:
+      radial-gradient(circle at top, #0f2f22, #050b08 60%);
+    color:#ffffff;
 }
 
-/* Common */
+/* Layout */
 .container{
-    width:90%;
+    width:92%;
     max-width:1100px;
     margin:auto;
 }
 
+/* Telegram Button */
 .btn{
-    display:inline-block;
-    padding:14px 26px;
-    background: linear-gradient(90deg,#00ff88,#00cfff);
-    color:#000;
-    border-radius:30px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    max-width:340px;
+    padding:15px 20px;
+    background:linear-gradient(135deg,#229ED9,#1c7fb6);
+    color:#fff;
+    border-radius:40px;
     text-decoration:none;
-    font-weight:700;
-    margin-top:18px;
+    font-weight:600;
+    font-size:16px;
+    box-shadow:0 10px 30px rgba(34,158,217,.35);
+    transition:.3s;
 }
 
-/* Hero */
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 40px rgba(34,158,217,.55);
+}
+
+/* HERO */
 .hero{
     text-align:center;
-    padding:60px 0;
+    padding:55px 0 45px;
 }
 
 .logo{
     width:110px;
     height:110px;
     border-radius:50%;
-    border:3px solid #00ff88;
-    margin-bottom:15px;
+    border:3px solid var(--tg-blue);
+    margin-bottom:18px;
+    object-fit:cover;
 }
 
 .hero h1{
-    font-size:34px;
-    color:#00ff88;
+    font-size:30px;
+    letter-spacing:1px;
+    margin-bottom:8px;
+}
+
+.hero h1 span{
+    color:var(--accent);
 }
 
 .hero p{
-    margin:12px 0;
-    font-size:16px;
-    opacity:0.9;
+    font-size:15px;
+    opacity:.9;
+    margin-bottom:10px;
 }
 
-/* Section */
+/* Sections */
 .section{
     padding:40px 0;
 }
 
 .section h2{
     text-align:center;
-    color:#00ff88;
+    font-size:22px;
     margin-bottom:25px;
+}
+
+.section h2 span{
+    color:var(--accent);
 }
 
 /* Cards */
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+    grid-template-columns:1fr;
+    gap:18px;
 }
 
-.card{
-    background:#0d2b1c;
-    border-radius:16px;
+.card,.testimonial,.stat{
+    background:var(--glass);
+    backdrop-filter: blur(14px);
+    border-radius:18px;
     padding:22px;
     text-align:center;
+    border:1px solid rgba(255,255,255,.08);
 }
 
-.card h3{
-    margin-bottom:10px;
-    color:#00cfff;
+.card h3,.testimonial h3{
+    color:var(--tg-blue);
+    margin-bottom:8px;
+    font-size:18px;
 }
 
 /* Stats */
 .stats{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:20px;
-    text-align:center;
-}
-
-.stat{
-    background:#0b2317;
-    padding:22px;
-    border-radius:16px;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
 }
 
 .stat h3{
-    color:#00ff88;
-    font-size:26px;
-}
-
-/* Testimonials */
-.testimonial{
-    background:#0b2317;
-    padding:20px;
-    border-radius:16px;
+    font-size:24px;
+    color:var(--accent);
 }
 
 /* Footer CTA */
 .footer-cta{
-    background:linear-gradient(90deg,#00ff88,#00cfff);
-    color:#000;
+    background:linear-gradient(135deg,#229ED9,#1c7fb6);
     text-align:center;
-    padding:45px 20px;
+    padding:45px 15px;
+    margin-top:40px;
 }
 
-.footer-cta a{
-    background:#000;
-    color:#00ff88;
+.footer-cta h2{
+    font-size:22px;
+    margin-bottom:10px;
 }
 
-/* Responsive */
-@media(max-width:600px){
-    .hero h1{font-size:28px;}
+.footer-cta p{
+    opacity:.9;
+    margin-bottom:15px;
+}
+
+.footer-cta .btn{
+    background:#fff;
+    color:#229ED9;
+}
+
+/* Desktop */
+@media(min-width:768px){
+    .hero h1{font-size:36px;}
+    .cards{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(min-width:1024px){
+    .cards{grid-template-columns:repeat(4,1fr);}
 }
 </style>
 </head>
@@ -141,44 +176,45 @@ body{
 
 <!-- HERO -->
 <section class="hero container">
-    <img src="IMG_20251111_160147.jpg" class="logo">
-    <h1>𝐕𝐈𝐑𝐀𝐓 𝐂𝐑𝐈𝐂𝐄𝐓 𝐓𝐈𝐏𝐒</h1>
-    <p>Join 25,000+ Cricket Lovers Getting Accurate Match Predictions 🏏</p>
-    <p>✔ 99% Accuracy | ✔ Free Telegram Channel | ✔ Live Match Alerts</p>
-    <a href="https://t.me/yourtelegramlink" class="btn">Join Free Telegram Channel</a>
+    <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/2.png"
+         class="logo"
+         alt="Virat Cricket Tips">
+
+    <h1><span>VIRAT</span> CRICKET TIPS</h1>
+    <p>25,000+ Members • Trusted Cricket Predictions 🏏</p>
+    <p>✔ 99% Accuracy • ✔ Free Telegram Channel</p>
+
+    <a href="https://t.me/yourtelegramlink" class="btn">
+        🚀 Join Telegram Channel
+    </a>
 </section>
 
-<!-- WHY CHOOSE -->
+<!-- WHY -->
 <section class="section container">
-    <h2>Why Choose Virat Cricket Tips?</h2>
+    <h2>Why <span>Choose Us?</span></h2>
     <div class="cards">
         <div class="card">
             <h3>🏏 Match Predictions</h3>
-            <p>Carefully researched match & session tips.</p>
+            <p>Expert match & session tips with deep research.</p>
         </div>
         <div class="card">
-            <h3>⚡ Live Updates</h3>
-            <p>Instant toss & live match alerts.</p>
+            <h3>⚡ Live Alerts</h3>
+            <p>Instant toss & in-play Telegram updates.</p>
         </div>
         <div class="card">
             <h3>📊 99% Accuracy</h3>
-            <p>One of the most accurate cricket channels.</p>
+            <p>Consistent performance across formats.</p>
         </div>
         <div class="card">
-            <h3>🧠 Expert Analysis</h3>
-            <p>Pitch, weather & player-based insights.</p>
+            <h3>🧠 Pro Analysis</h3>
+            <p>Pitch, weather & player data insights.</p>
         </div>
     </div>
 </section>
 
-<!-- CTA -->
-<section class="section container" style="text-align:center;">
-    <a href="https://t.me/yourtelegramlink" class="btn">Join Free Telegram Channel</a>
-</section>
-
 <!-- STATS -->
 <section class="section container">
-    <h2>Proven Track Record</h2>
+    <h2>Our <span>Performance</span></h2>
     <div class="stats">
         <div class="stat">
             <h3>2–3</h3>
@@ -186,39 +222,45 @@ body{
         </div>
         <div class="stat">
             <h3>99%</h3>
-            <p>Accuracy Rate</p>
+            <p>Accuracy</p>
         </div>
         <div class="stat">
-            <h3>Live</h3>
-            <p>Match Coverage</p>
+            <h3>LIVE</h3>
+            <p>Coverage</p>
         </div>
     </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="section container">
-    <h2>What Our Members Say</h2>
+    <h2>Member <span>Reviews</span></h2>
     <div class="cards">
         <div class="testimonial">
-            <h3>Rahul S.</h3>
-            <p>“Extremely accurate predictions. Best free cricket tips channel.”</p>
+            <h3>Rahul</h3>
+            <p>Clean and accurate tips. Best free channel.</p>
         </div>
         <div class="testimonial">
-            <h3>Amit K.</h3>
-            <p>“Live alerts helped me during IPL & World Cup matches.”</p>
+            <h3>Amit</h3>
+            <p>Live alerts help a lot during IPL.</p>
         </div>
         <div class="testimonial">
-            <h3>Vikas P.</h3>
-            <p>“Genuine analysis without fake hype. Highly trusted.”</p>
+            <h3>Vikas</h3>
+            <p>No fake hype, only genuine analysis.</p>
+        </div>
+        <div class="testimonial">
+            <h3>Suresh</h3>
+            <p>Highly recommended for cricket lovers.</p>
         </div>
     </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="footer-cta">
-    <h2>Don’t Miss Today’s Winning Tips 🏏</h2>
-    <p>100% Free • Limited Time Access</p>
-    <a href="https://t.me/yourtelegramlink" class="btn">Join Telegram Channel Now</a>
+    <h2>Don’t Miss Today’s Match Tips 🏏</h2>
+    <p>Free • Trusted • Telegram Only</p>
+    <a href="https://t.me/yourtelegramlink" class="btn">
+        Join Now on Telegram
+    </a>
 </section>
 
 </body>
