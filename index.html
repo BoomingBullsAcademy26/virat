@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIRAT CRICKET TIPS</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg,#081a12,#020d08);
+    color:#fff;
+}
+
+/* Common */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 26px;
+    background: linear-gradient(90deg,#00ff88,#00cfff);
+    color:#000;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:700;
+    margin-top:18px;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:60px 0;
+}
+
+.logo{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    border:3px solid #00ff88;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:34px;
+    color:#00ff88;
+}
+
+.hero p{
+    margin:12px 0;
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* Section */
+.section{
+    padding:40px 0;
+}
+
+.section h2{
+    text-align:center;
+    color:#00ff88;
+    margin-bottom:25px;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#0d2b1c;
+    border-radius:16px;
+    padding:22px;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#00cfff;
+}
+
+/* Stats */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat{
+    background:#0b2317;
+    padding:22px;
+    border-radius:16px;
+}
+
+.stat h3{
+    color:#00ff88;
+    font-size:26px;
+}
+
+/* Testimonials */
+.testimonial{
+    background:#0b2317;
+    padding:20px;
+    border-radius:16px;
+}
+
+/* Footer CTA */
+.footer-cta{
+    background:linear-gradient(90deg,#00ff88,#00cfff);
+    color:#000;
+    text-align:center;
+    padding:45px 20px;
+}
+
+.footer-cta a{
+    background:#000;
+    color:#00ff88;
+}
+
+/* Responsive */
+@media(max-width:600px){
+    .hero h1{font-size:28px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero container">
+    <img src="https://pin.it/64URH7n8w" alt="Virat Cricket Tips" class="logo">
+    <h1>𝐕𝐈𝐑𝐀𝐓 𝐂𝐑𝐈𝐂𝐄𝐓 𝐓𝐈𝐏𝐒</h1>
+    <p>Join 25,000+ Cricket Lovers Getting Accurate Match Predictions 🏏</p>
+    <p>✔ 99% Accuracy | ✔ Free Telegram Channel | ✔ Live Match Alerts</p>
+    <a href="https://t.me/yourtelegramlink" class="btn">Join Free Telegram Channel</a>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="section container">
+    <h2>Why Choose Virat Cricket Tips?</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🏏 Match Predictions</h3>
+            <p>Carefully researched match & session tips.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Live Updates</h3>
+            <p>Instant toss & live match alerts.</p>
+        </div>
+        <div class="card">
+            <h3>📊 99% Accuracy</h3>
+            <p>One of the most accurate cricket channels.</p>
+        </div>
+        <div class="card">
+            <h3>🧠 Expert Analysis</h3>
+            <p>Pitch, weather & player-based insights.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section container" style="text-align:center;">
+    <a href="https://t.me/yourtelegramlink" class="btn">Join Free Telegram Channel</a>
+</section>
+
+<!-- STATS -->
+<section class="section container">
+    <h2>Proven Track Record</h2>
+    <div class="stats">
+        <div class="stat">
+            <h3>2–3</h3>
+            <p>Matches Daily</p>
+        </div>
+        <div class="stat">
+            <h3>99%</h3>
+            <p>Accuracy Rate</p>
+        </div>
+        <div class="stat">
+            <h3>Live</h3>
+            <p>Match Coverage</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section container">
+    <h2>What Our Members Say</h2>
+    <div class="cards">
+        <div class="testimonial">
+            <h3>Rahul S.</h3>
+            <p>“Extremely accurate predictions. Best free cricket tips channel.”</p>
+        </div>
+        <div class="testimonial">
+            <h3>Amit K.</h3>
+            <p>“Live alerts helped me during IPL & World Cup matches.”</p>
+        </div>
+        <div class="testimonial">
+            <h3>Vikas P.</h3>
+            <p>“Genuine analysis without fake hype. Highly trusted.”</p>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="footer-cta">
+    <h2>Don’t Miss Today’s Winning Tips 🏏</h2>
+    <p>100% Free • Limited Time Access</p>
+    <a href="https://t.me/yourtelegramlink" class="btn">Join Telegram Channel Now</a>
+</section>
+
+</body>
+</html>
